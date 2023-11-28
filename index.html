@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>kerala tourism</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./assets/img/logo-nobg.png" alt="Your Logo" width="auto" height="70" class="ms-lg-5">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-lg-auto mb-2 ">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#hero">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#destination">Destination</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="signupModalLabel">Login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Login form goes here -->
+          <form>
+            <!-- Form fields go here -->
+            <div class="mb-3">
+              <label for="signupUsername" class="form-label">Username</label>
+              <input type="text" class="form-control" id="signupUsername" placeholder="Enter your username" required>
+            </div>
+            <div class="mb-3">
+              <label for="signupEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="signupEmail" placeholder="Enter your email" required>
+            </div>
+            <div class="mb-3">
+              <label for="signupPassword" class="form-label">Password</label>
+              <input type="password" class="form-control" id="signupPassword" placeholder="Enter your password"
+                required>
+            </div>
+            <button type="submit" class="btn btn-warning">Sign up</button>
+
+            <div class="mt-2">
+              <p>Already have an account? <a href="#" data-bs-dismiss="modal" data-bs-toggle="modal"
+                  data-bs-target="#loginModal">Login</a></p>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Login Modal -->
+
+  <!-- Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Login form goes here -->
+          <form>
+            <!-- Form fields go here -->
+            <div class="mb-3">
+              <label for="loginUsername" class="form-label">Username</label>
+              <input type="text" class="form-control" id="loginUsername" placeholder="Enter your username" required>
+            </div>
+            <div class="mb-3">
+              <label for="loginPassword" class="form-label">Password</label>
+              <input type="password" class="form-control" id="loginPassword" placeholder="Enter your password" required>
+            </div>
+            <!-- Add more form fields as needed -->
+
+            <button type="submit" class="btn btn-success">Login</button>
+
+            <div class="mt-2">
+              <p>Don't have an account? <a href="#" data-bs-dismiss="modal" data-bs-toggle="modal"
+                  data-bs-target="#signupModal">Sign up</a></p>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- hero -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>KERALA TOURISM</h1>
+      <!-- <p>I'm <span class="typed" data-typed-items="Designer, Developer, Video Editor, Gamer"></span></p> -->
+    </div>
+  </section>
+  <!-- hero ends -->
+
+
+  <!-- ABOUT START -->
+  <section id="about" class="about pt-5 ">
+    <div class="container mt-5">
+
+      <div class="section-title py-5">
+
+        <h2 class="heading">ABOUT</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-4  d-flex justify-content-center align-items-center" data-aos="fade-right">
+          <img
+            src="https://c1.wallpaperflare.com/preview/732/648/952/kathakali-dance-india-kerala-portraits-peopleandculture.jpg"
+            img-fluid" alt="" width="auto" class=" img-fluid">
+        </div>
+        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+          <h3> KERALA</h3>
+          <div class="row">
+            <div class="col-lg-12">
+
+              Kerala, located on the south-western tip of India, enjoys unique geographical features that have made it
+              one of the most sought-after tourist destinations in Asia. Fondly referred to as ‘God’s Own Country’,
+              Kerala was selected by the National Geographic Traveller as one of the 50 destinations of a lifetime and
+              one of the thirteen paradises in the world.
+
+              An equable climate, serene beaches, tranquil stretches of backwaters, lush hill stations and exotic
+              wildlife are the major attractions of this land. A unique advantage of Kerala is that most of the
+              destinations here are only a two - four hour drive from the other.
+
+              Classical art forms, colourful festivals, exotic cuisine are some of the cultural marvels that await
+              travellers. Ayurveda, the ancient Indian system of medicine and Panchakarma, the rejuvenation therapy in
+              Ayurveda have also helped Kerala to gain a pan-global reputation as a worth-visit destination.
+
+              Season never ends in Kerala, thanks to the year-long moderate climate and numerous festivals and events.
+
+            </div>
+
+
+          </div>
+        </div>
+
+      </div>
+  </section>
+  <!-- ABOUT END -->
+
+  <section id="destination" class="destination pt-5 ">
+    <div class=" container mt-5 ">
+      <div class="section-title  py-5">
+
+        <h2 class="heading">DESTINATION</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+
+          Kerala, often referred to as "God's Own Country," is a captivating tourist destination in southern India.
+          Renowned for its lush greenery, serene backwaters, and vibrant cultural heritage, Kerala offers a diverse and
+          enchanting experience for travelers. The backwaters, a network of lakes, rivers, and canals, are a hallmark of
+          Kerala, where houseboats glide through peaceful waters surrounded by picturesque landscapes. The state is also
+          known for its pristine beaches, such as Kovalam and Varkala, where golden sands meet the Arabian Sea. Visitors
+          can explore the Western Ghats, home to lush hill stations like Munnar, known for its tea plantations and cool
+          climate. Kerala's rich cultural tapestry is reflected in its classical dance forms, vibrant festivals, and
+          traditional art and architecture. The delectable cuisine, featuring coconut-infused dishes and aromatic
+          spices, adds a flavorful touch to the overall Kerala experience. With its harmonious blend of nature, culture,
+          and warmth, Kerala stands as a must-visit destination for those seeking a tranquil and culturally rich escape.
+
+        </div>
+
+
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 mt-5 g-4">
+        <div class="col ">
+          <div class="card" style="max-width: 22rem;">
+
+            <!-- Card image -->
+            <div class="view overlay">
+              <img class="card-img-top" src="./assets/img/kasaragod.jpg" alt="Card image cap">
+              <a>
+                <div class="mask rgba-white-slight waves-effect waves-light"></div>
+              </a>
+            </div>
+            <!-- Card content -->
+            <div class="card-body">
+
+              <!-- Title -->
+              <h4 class="card-title">kasaragod</h4>
+              <hr>
+              <!-- Text -->
+              <p class="card-text">Kasaragod is a district in the state of Kerala, India. It is the northernmost
+                district of Kerala and is known for its diverse culture, historical significance, and natural beauty.....
+              </p>
+              <!-- Link -->
+              <a href="./templates/kasaragod.html" class="black-text d-flex justify-content-end">
+                <h5 class="text-dark">Read more <i class="fas fa-angle-double-right"></i></h5>
+              </a>
+
+            </div>
+
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="max-width: 22rem;">
+
+            <!-- Card image -->
+            <div class="view overlay">
+              <img class="card-img-top"
+                src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%28131%29.webp"
+                alt="Card image cap">
+              <a>
+                <div class="mask rgba-white-slight waves-effect waves-light"></div>
+              </a>
+            </div>
+            <!-- Card content -->
+            <div class="card-body">
+
+              <!-- Title -->
+              <h4 class="card-title">Card title</h4>
+              <hr>
+              <!-- Text -->
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <!-- Link -->
+              <a href="#!" class="black-text d-flex justify-content-end">
+                <h5 class="text-dark">Read more <i class="fas fa-angle-double-right"></i></h5>
+              </a>
+
+            </div>
+
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="max-width: 22rem;">
+
+            <!-- Card image -->
+            <div class="view overlay">
+              <img class="card-img-top"
+                src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%28131%29.webp"
+                alt="Card image cap">
+              <a>
+                <div class="mask rgba-white-slight waves-effect waves-light"></div>
+              </a>
+            </div>
+            <!-- Card content -->
+            <div class="card-body">
+
+              <!-- Title -->
+              <h4 class="card-title">Card title</h4>
+              <hr>
+              <!-- Text -->
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <!-- Link -->
+              <a href="#!" class="black-text d-flex justify-content-end">
+                <h5 class="text-dark">Read more <i class="fas fa-angle-double-right"></i></h5>
+              </a>
+
+            </div>
+
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="max-width: 22rem;">
+
+            <!-- Card image -->
+            <div class="view overlay">
+              <img class="card-img-top"
+                src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%28131%29.webp"
+                alt="Card image cap">
+              <a>
+                <div class="mask rgba-white-slight waves-effect waves-light"></div>
+              </a>
+            </div>
+            <!-- Card content -->
+            <div class="card-body">
+
+              <!-- Title -->
+              <h4 class="card-title">Card title</h4>
+              <hr>
+              <!-- Text -->
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <!-- Link -->
+              <a href="#!" class="black-text d-flex justify-content-end">
+                <h5 class="text-dark">Read more <i class="fas fa-angle-double-right"></i></h5>
+              </a>
+
+            </div>
+
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="max-width: 22rem;">
+
+            <!-- Card image -->
+            <div class="view overlay">
+              <img class="card-img-top"
+                src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%28131%29.webp"
+                alt="Card image cap">
+              <a>
+                <div class="mask rgba-white-slight waves-effect waves-light"></div>
+              </a>
+            </div>
+            <!-- Card content -->
+            <div class="card-body">
+
+              <!-- Title -->
+              <h4 class="card-title">Card title</h4>
+              <hr>
+              <!-- Text -->
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <!-- Link -->
+              <a href="#!" class="black-text d-flex justify-content-end">
+                <h5 class="text-dark">Read more <i class="fas fa-angle-double-right"></i></h5>
+              </a>
+
+            </div>
+
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="max-width: 22rem;">
+
+            <!-- Card image -->
+            <div class="view overlay">
+              <img class="card-img-top"
+                src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%28131%29.webp"
+                alt="Card image cap">
+              <a>
+                <div class="mask rgba-white-slight waves-effect waves-light"></div>
+              </a>
+            </div>
+            <!-- Card content -->
+            <div class="card-body">
+
+              <!-- Title -->
+              <h4 class="card-title">Card title</h4>
+              <hr>
+              <!-- Text -->
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <!-- Link -->
+              <a href="#!" class="black-text d-flex justify-content-end">
+                <h5 class="text-dark">Read more <i class="fas fa-angle-double-right"></i></h5>
+              </a>
+
+            </div>
+
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="max-width: 22rem;">
+
+            <!-- Card image -->
+            <div class="view overlay">
+              <img class="card-img-top"
+                src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%28131%29.webp"
+                alt="Card image cap">
+              <a>
+                <div class="mask rgba-white-slight waves-effect waves-light"></div>
+              </a>
+            </div>
+            <!-- Card content -->
+            <div class="card-body">
+
+              <!-- Title -->
+              <h4 class="card-title">Card title</h4>
+              <hr>
+              <!-- Text -->
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <!-- Link -->
+              <a href="#!" class="black-text d-flex justify-content-end">
+                <h5 class="text-dark">Read more <i class="fas fa-angle-double-right"></i></h5>
+              </a>
+
+            </div>
+
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="max-width: 22rem;">
+
+            <!-- Card image -->
+            <div class="view overlay">
+              <img class="card-img-top"
+                src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%28131%29.webp"
+                alt="Card image cap">
+              <a>
+                <div class="mask rgba-white-slight waves-effect waves-light"></div>
+              </a>
+            </div>
+            <!-- Card content -->
+            <div class="card-body">
+
+              <!-- Title -->
+              <h4 class="card-title">Card title</h4>
+              <hr>
+              <!-- Text -->
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <!-- Link -->
+              <a href="#!" class="black-text d-flex justify-content-end">
+                <h5 class="text-dark">Read more <i class="fas fa-angle-double-right"></i></h5>
+              </a>
+
+            </div>
+
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="max-width: 22rem;">
+
+            <!-- Card image -->
+            <div class="view overlay">
+              <img class="card-img-top"
+                src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%28131%29.webp"
+                alt="Card image cap">
+              <a>
+                <div class="mask rgba-white-slight waves-effect waves-light"></div>
+              </a>
+            </div>
+            <!-- Card content -->
+            <div class="card-body">
+
+              <!-- Title -->
+              <h4 class="card-title">Card title</h4>
+              <hr>
+              <!-- Text -->
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <!-- Link -->
+              <a href="#!" class="black-text d-flex justify-content-end">
+                <h5 class="text-dark">Read more <i class="fas fa-angle-double-right"></i></h5>
+              </a>
+
+            </div>
+
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="max-width: 22rem;">
+
+            <!-- Card image -->
+            <div class="view overlay">
+              <img class="card-img-top"
+                src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%28131%29.webp"
+                alt="Card image cap">
+              <a>
+                <div class="mask rgba-white-slight waves-effect waves-light"></div>
+              </a>
+            </div>
+            <!-- Card content -->
+            <div class="card-body">
+
+              <!-- Title -->
+              <h4 class="card-title">Card title</h4>
+              <hr>
+              <!-- Text -->
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <!-- Link -->
+              <a href="#!" class="black-text d-flex justify-content-end">
+                <h5 class="text-dark">Read more <i class="fas fa-angle-double-right"></i></h5>
+              </a>
+
+            </div>
+
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="max-width: 22rem;">
+
+            <!-- Card image -->
+            <div class="view overlay">
+              <img class="card-img-top"
+                src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%28131%29.webp"
+                alt="Card image cap">
+              <a>
+                <div class="mask rgba-white-slight waves-effect waves-light"></div>
+              </a>
+            </div>
+            <!-- Card content -->
+            <div class="card-body">
+
+              <!-- Title -->
+              <h4 class="card-title">Card title</h4>
+              <hr>
+              <!-- Text -->
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <!-- Link -->
+              <a href="#!" class="black-text d-flex justify-content-end">
+                <h5 class="text-dark">Read more <i class="fas fa-angle-double-right"></i></h5>
+              </a>
+
+            </div>
+
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="max-width: 22rem;">
+
+            <!-- Card image -->
+            <div class="view overlay">
+              <img class="card-img-top"
+                src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%28131%29.webp"
+                alt="Card image cap">
+              <a>
+                <div class="mask rgba-white-slight waves-effect waves-light"></div>
+              </a>
+            </div>
+            <!-- Card content -->
+            <div class="card-body">
+
+              <!-- Title -->
+              <h4 class="card-title">Card title</h4>
+              <hr>
+              <!-- Text -->
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <!-- Link -->
+              <a href="#!" class="black-text d-flex justify-content-end">
+                <h5 class="text-dark">Read more <i class="fas fa-angle-double-right"></i></h5>
+              </a>
+
+            </div>
+
+          </div>
+        </div>
+        <div class="col ms-auto">
+          <div class="card" style="max-width: 22rem;">
+
+            <!-- Card image -->
+            <div class="view overlay">
+              <img class="card-img-top"
+                src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%28131%29.webp"
+                alt="Card image cap">
+              <a>
+                <div class="mask rgba-white-slight waves-effect waves-light"></div>
+              </a>
+            </div>
+            <!-- Card content -->
+            <div class="card-body">
+
+              <!-- Title -->
+              <h4 class="card-title">Card title</h4>
+              <hr>
+              <!-- Text -->
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <!-- Link -->
+              <a href="#!" class="black-text d-flex justify-content-end">
+                <h5 class="text-dark">Read more <i class="fas fa-angle-double-right"></i></h5>
+              </a>
+
+            </div>
+
+          </div>
+        </div>
+        <div class="col me-auto">
+          <div class="card" style="max-width: 22rem;">
+
+            <!-- Card image -->
+            <div class="view overlay">
+              <img class="card-img-top"
+                src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%28131%29.webp"
+                alt="Card image cap">
+              <a>
+                <div class="mask rgba-white-slight waves-effect waves-light"></div>
+              </a>
+            </div>
+            <!-- Card content -->
+            <div class="card-body">
+
+              <!-- Title -->
+              <h4 class="card-title">Card title</h4>
+              <hr>
+              <!-- Text -->
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <!-- Link -->
+              <a href="#!" class="black-text d-flex justify-content-end">
+                <h5 class="text-dark">Read more <i class="fas fa-angle-double-right"></i></h5>
+              </a>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+  <div class="container-fluid ">
+    <div id="carouselExample " class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://ashin-amanulla.github.io/ashin_keralatourismwebsite/img/s1.jpg" class="d-block w-100 "
+            alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://ashin-amanulla.github.io/ashin_keralatourismwebsite/img/bg4.jpg" class="d-block w-100 "
+            alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://ashin-amanulla.github.io/ashin_keralatourismwebsite/img/s1.jpg" class="d-block w-100"
+            alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+</body>
+</body>
+
+</html>
