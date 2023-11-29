@@ -14,7 +14,7 @@ body{
 
 
 .navbar-nav{
-    text-align:right;
+    /* text-align:right; */
 }
 
 .navbar-nav .nav-item a{
@@ -96,6 +96,7 @@ color: green;
 .black-text{
   color: black !important;
   text-decoration: none;
+
 }
 
 
