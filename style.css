@@ -70,12 +70,11 @@ color: green !important;
       line-height: 36px;
     }
     .dropdown-menu {
-        min-height: 300px; /* Adjust the max-height as needed */
-        overflow-y: auto;
-      }
-      
-    
+      max-height: 300px;
+      overflow-y: auto;
+    }
   }
+
   @media (max-width: 470px) {
     #hero h1 {
       font-size: 36px;
@@ -91,12 +90,7 @@ color: green !important;
       
     }
   }
-  @media (max-width: 767px) {
-    .dropdown-menu {
-      max-height: 200px; /* Adjust the max-height as needed */
-      overflow-y: auto;
-    }
-  }
+ 
 
 
 

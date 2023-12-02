@@ -20,7 +20,12 @@ color: green !important;
 .heading{
     color: green;
 
-  }
+}
+.dropdown-menu .dropdown-item.active {
+  color: black !important;
+  background-color: #f8f9fa !important;
+}
+
 
 
 #hero {
@@ -67,11 +72,9 @@ color: green !important;
       font-size: 48px;
       line-height: 36px;
     }
-  
-    #hero h2 {
-      font-size: 18px;
-      line-height: 24px;
-      margin-bottom: 30px;
+    .dropdown-menu {
+      max-height: 300px;
+      overflow-y: auto;
     }
   }
   @media (max-width: 470px) {
@@ -79,9 +82,4 @@ color: green !important;
       font-size: 36px;
       line-height: 24px;
     }
-    #hero h2 {
-        font-size: 12px;
-        line-height: 20px;
-        margin-bottom: 24px;
-      }
     }
