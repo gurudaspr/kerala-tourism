@@ -61,28 +61,29 @@ color: green !important;
       background-attachment: fixed;
     }
   }
+
+  @media (max-width: 900px) {
+    #hero h1 {
+      font-size: 54px;
+      line-height: 36px;
+    }
+  }
   
   @media (max-width: 768px) {
     #hero h1 {
       font-size: 48px;
       line-height: 36px;
     }
-  
-    #hero h2 {
-      font-size: 18px;
-      line-height: 24px;
-      margin-bottom: 30px;
-    }
   }
-  @media (max-width: 470px) {
+  @media (max-width: 620px) {
     #hero h1 {
-      font-size: 28px;
+      font-size: 32px;
       line-height: 24px;
     }
     }
-  @media (max-width: 340px) {
+  @media (max-width: 440px) {
       #hero h1 {
-        font-size: 20px;
+        font-size: 24px;
         line-height: 16px;
         display: flex;
         justify-content: center;
