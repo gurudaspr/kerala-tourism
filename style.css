@@ -12,7 +12,7 @@ body{
 
 .navbar-nav .nav-item a{
 font-size: larger;
-color: green;
+color: green ; 
 }
 
 #hero {
@@ -65,8 +65,20 @@ color: green;
       font-size: 36px;
       line-height: 24px;
     }
-    
     }
+    @media (max-width: 340px) {
+      #hero h1 {
+        font-size: 28px;
+        line-height: 24px;
+        display: flex;
+        justify-content: center;
+      
+    }
+  }
+
+
+
+
 
 .heading{
       color: green;
