@@ -76,12 +76,16 @@ color: green !important;
   }
   @media (max-width: 470px) {
     #hero h1 {
-      font-size: 36px;
+      font-size: 28px;
       line-height: 24px;
     }
-    #hero h2 {
-        font-size: 12px;
-        line-height: 20px;
-        margin-bottom: 24px;
-      }
     }
+  @media (max-width: 340px) {
+      #hero h1 {
+        font-size: 20px;
+        line-height: 16px;
+        display: flex;
+        justify-content: center;
+      
+    }
+  }    
