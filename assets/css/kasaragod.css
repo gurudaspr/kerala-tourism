@@ -8,12 +8,15 @@ body{
 
 
 
+.navbar-nav .nav-item a.nav-link:hover {
+  font-weight: 500;
+}
+
 .navbar-nav .nav-item a{
-  font-size: larger;
-  color: green;
-  }
-  
-  .heading{
+font-size: larger;
+color: green !important; 
+}
+.heading{
     color: green;
 
   }

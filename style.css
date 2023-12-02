@@ -10,9 +10,13 @@ body{
     text-align:right;
 } */
 
+.navbar-nav .nav-item a.nav-link:hover {
+  font-weight: 500;
+}
+
 .navbar-nav .nav-item a{
 font-size: larger;
-color: green ; 
+color: green !important; 
 }
 
 .signuplogin a{
