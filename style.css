@@ -24,7 +24,6 @@ color: green !important;
 .signuplogin a{
   text-decoration: none;
 }
-
 #hero {
     width: 100%;
     height: 100vh;
@@ -62,6 +61,7 @@ color: green !important;
     #hero {
       background-attachment: fixed;
     }
+    
   }
   
   @media (max-width: 768px) {
@@ -69,6 +69,12 @@ color: green !important;
       font-size: 48px;
       line-height: 36px;
     }
+    .dropdown-menu {
+        min-height: 300px; /* Adjust the max-height as needed */
+        overflow-y: auto;
+      }
+      
+    
   }
   @media (max-width: 470px) {
     #hero h1 {
@@ -85,7 +91,12 @@ color: green !important;
       
     }
   }
-
+  @media (max-width: 767px) {
+    .dropdown-menu {
+      max-height: 200px; /* Adjust the max-height as needed */
+      overflow-y: auto;
+    }
+  }
 
 
 
