@@ -70,27 +70,30 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="signupModalLabel">Login</h5>
+          <h5 class="modal-title" id="signupModalLabel">Signup</h5> 
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <!-- Login form goes here -->
-          <form>
+          <form id="signupform" onsubmit=" return handleSubmit()">
             <!-- Form fields go here -->
+            <div class="alert alert-danger" id="signupAlert" role="alert" style="display: none;">
+              A simple danger alert—check it out!
+            </div>
+      
             <div class="mb-3">
               <label for="signupUsername" class="form-label">Username</label>
-              <input type="text" class="form-control" id="signupUsername" placeholder="Enter your username" required>
+              <input type="text" class="form-control" id="signupUsername" placeholder="Enter your username">
             </div>
             <div class="mb-3">
               <label for="signupEmail" class="form-label">Email</label>
-              <input type="email" class="form-control" id="signupEmail" placeholder="Enter your email" required>
+              <input type="email" class="form-control" id="signupEmail" placeholder="Enter your email" >
             </div>
             <div class="mb-3">
               <label for="signupPassword" class="form-label">Password</label>
-              <input type="password" class="form-control" id="signupPassword" placeholder="Enter your password"
-                required>
+              <input type="password" class="form-control" id="signupPassword" placeholder="Enter your password">
             </div>
-            <button type="submit" class="btn btn-success">Sign up</button>
+            <button type="submit"   class="btn btn-success">Sign up</button>
 
             <div class="mt-2 signuplogin">
               <p>Already have an account? <a href="#" data-bs-dismiss="modal" data-bs-toggle="modal"
@@ -117,17 +120,19 @@
         </div>
         <div class="modal-body">
           <!-- Login form goes here -->
-          <form>
+          <form id="loginForm" onsubmit=" return handleLoginSubmit()">
             <!-- Form fields go here -->
+            <div class="alert alert-danger" id="loginAlert" role="alert" style="display: none;">
+              A simple danger alert—check it out!
+            </div>
             <div class="mb-3">
               <label for="loginUsername" class="form-label">Username</label>
-              <input type="text" class="form-control" id="loginUsername" placeholder="Enter your username" required>
+              <input type="text" class="form-control" id="loginUsername" placeholder="Enter your username" >
             </div>
             <div class="mb-3">
               <label for="loginPassword" class="form-label">Password</label>
-              <input type="password" class="form-control" id="loginPassword" placeholder="Enter your password" required>
+              <input type="password" class="form-control" id="loginPassword" placeholder="Enter your password">
             </div>
-            <!-- Add more form fields as needed -->
 
             <button type="submit" class="btn btn-success">Login</button>
 
@@ -654,32 +659,35 @@
       <div class="section-title pb-3">
         <h1 class="heading">Contact</h1>
       </div>
+      <div class="alert alert-danger" id="contactAlert" role="alert" style="display: none;">
+        A simple danger alert—check it out!
+      </div>
       <div class="col-12">
-        <form>
+        <form id="contactForm" onsubmit=" return handleContactSubmit()">
           <div class="row">
             <div class="form-group col-md-6 mb-3">
               <label for="name">Your Name</label>
-              <input type="text" name="name" class="form-control" id="name" placeholder="Enter your name" required>
+              <input type="text" name="name" class="form-control" id="contactName" placeholder="Enter your name">
             </div>
             <div class="form-group col-md-6 mb-3">
               <label for="name">Your Email</label>
-              <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email" required>
+              <input type="email" class="form-control" name="email" id="contactEmail" placeholder="Enter your email">
             </div>
           </div>
           <div class="form-group mb-3">
             <label for="name">Subject</label>
-            <input type="text" class="form-control" name="subject" id="subject" placeholder="Enter subject" required>
+            <input type="text" class="form-control" name="subject" id="contactSubject" placeholder="Enter subject" >
           </div>
           <div class="form-group mb-3">
             <label for="name">Message</label>
-            <textarea class="form-control" name="message" rows="10" placeholder="Message" required></textarea>
+            <textarea class="form-control" name="message" rows="10" id="contactMessage" placeholder="Message"></textarea>
           </div>
 
           <div class="text-center pt-3 mb-5" ><button class="btn btn-success" type="submit" >Send Message</button></div>
         </form>
       </div>
     </div>
-  </section>
+  </section> 
     <!-- End Contact -->
 
     <!-- Footer -->
@@ -710,7 +718,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"></script>
-
+    <script src="handleSubmit.js"></script>
 
 
 
